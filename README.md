@@ -99,8 +99,17 @@ This stack sets up the foundational services for the Aether platform — an AI-f
 
 ---
 
-## 🧭 Next Steps
+## 🛜 Check Services can Reach Each Other
 
-- Add exporters (e.g. node-exporter, postgres-exporter)
-- Implement Vault auto-init & secrets bootstrap
-- Build Phase 1: App + ingestion pipeline
+```bash
+docker run -it --rm --network aether_net alpine sh
+```
+- use this command to enter a temporary container on the same network to test connectivity between services.
+```bash
+apk add --no-cache netcat-openbsd
+```
+- use this command to install `nc` (netcat) in the temporary container for connectivity tests.
+```bash
+./check_services.sh
+```
+- run the script to see the status of all services in the stack in another container on the same network.
