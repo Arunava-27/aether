@@ -25,8 +25,8 @@ This stack sets up the foundational services for the Aether platform — an AI-f
 1. **Clone the Repository**
 
    ```bash
-   git clone <your-repo-url> aether-phase0
-   cd aether-phase0
+   git clone https://github.com/Arunava-27/aether.git
+   cd aether
    ```
 
 2. **Create `.env` File**
