@@ -188,4 +188,3 @@ networks:
   aether_net:
     name: aether_net
     driver: bridge
-    external: true
